@@ -1,8 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Layout = () => {
+export const Header = () => {
   return (
-    <div>
+    <header>
       <nav className="bg-gray-800 p-4">
         <ul className="flex justify-center space-x-4">
           <li>
@@ -27,9 +27,6 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-      <Outlet />
-    </div>
+    </header>
   );
 };
-
-export default Layout;
